@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            /* Podés visitar: https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox#el_modelo_flexible para entender el modelo Flexbox */
+            display: flex;
+            /* Establece el contenedor como un contenedor flex */
+            flex-wrap: wrap;
+            /* Permite que los elementos se envuelvan en líneas adicionales si no hay suficiente espacio */
+            justify-content: center;
+            /* Centra los elementos a lo largo del eje principal horizontal */
+            align-items: center;
+            /* Centra los elementos a lo largo del eje secundario vertical */
+            background-color: #FFF;
+            margin: 0 50px;
+            /* Margen a la derecha y a la izquierda. El valor 0 es para el margen superior e inferior */
+
+        }
+
+        header {
+            display: flex;
+            /* Establece el encabezado como un contenedor flex */
+            align-items: baseline;
+            /* Alinea los elementos del encabezado a lo largo de la línea de base */
+            justify-content: space-between;
+            /* Distribuye los elementos del encabezado de manera uniforme a lo largo del eje principal horizontal */
+            padding: 25px;
+        }
+
+        .container-title {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Pixelify Sans', cursive;
+        }
+
+        .container-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            width: 350px;
+            padding: 20px;
+            background-color: #293132;
+            margin: 10px;
+            text-align: center;
+            color: #FFF;
+
+        }
+
+        img {
+            width: 200px;
+        }
+
+        .boton {
+            text-decoration: none;
+            /* Eliminamos el subrayado del enlace */
+            color: rgb(228, 228, 228);
+            border: 2px solid rgb(255, 255, 255);
+            padding: 5px;
+            /* margen interior */
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .boton:hover {
+            /* pseudoclase hover se activa cuando el mouse está por encima del elemento */
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        footer {
+            background-color: black;
+            color: #FFF;
+            height: 100vh;
+            margin-top: 70px;
+
+        }
+
+        body {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .tit {
+            font-family: 'Pixelify Sans', cursive;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .icons {
+            width: 40px;
+            margin: 10px;
+        }
+        .michicho {
+            font-family: 'Pixelify Sans', cursive;
+            color: black;
+            text-align: center;
+            margin: 10px;
+        }
+        .michicho:hover{
+            color: rgb(112, 112, 112);
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-image">
+            <img src="assets/Sticker autocollant, DC Shoes logo.jpeg" alt="Imagen de Producto">
+            
+        </div>
+         <div class="michicho">
+            <a class="michicho" href="">NEW ARRIVALS</a>
+            <a class="michicho" href="">HOMBRES</a>
+            <a class="michicho" href="">MUJERES</a>
+            <a class="michicho" href="">NIÑOS</a>
+            <a class="michicho" href="">SKATE</a>
+            <a class="michicho" href="">SNOW</a>
+            <a class="michicho" href="">COMUNIDAD</a>
+        </div>
+        <div>
+            <h3 class="container-title">Street Lifestyle</h3>
+        </div>
+       
+    </header>
+    <main class="container">
+        <div class="box">
+            <img src="/assets/DC Court Graffik Men's Skate Shoes White_Black_Black.jpeg" alt="">
+            <h3 class="tit">DC Court Graffik White & Black <br>$60000</h3>
+            <p>Capellada de Sintético + Forrería liviana de lengueta + Espuma y Cuello con espuma acolchada para máximo
+                confort y soporte + Perforaciones de ventilación para una <br> mejor respirabilidad del pie + Diseño
+                Pill
+                Pattern de DC en pisada + Nueva suela Cupsole con costura</p>
+            <a class="boton" href="#">Comprar</a>
+        </div>
+        <div class="box">
+            <img src="assets/DC Kids Court Graffik (Little Kid_Big Kid) Boys Shoes Black_White 1.jpeg" alt="">
+            <h3 class="tit">DC Court Graffik Black & White <br>$60000</h3>
+            <p>Capellada de Sintético + Forrería liviana de lengueta + Espuma y Cuello con espuma acolchada para máximo
+                confort y soporte + Perforaciones de ventilación para una <br> mejor respirabilidad del pie + Diseño
+                Pill
+                Pattern de DC en pisada + Nueva suela Cupsole con costura</p>
+            <a class="boton" href="#">Comprar</a>
+        </div>
+        <div class="box">
+            <img src="assets/DC Kids Court Graffik (Little Kid_Big Kid) Girls Shoes Black_Pink.jpeg" alt="">
+            <h3 class="tit">DC Court Graffik Black & Pink <br> $60000</h3>
+            <p>Capellada de Sintético + Forrería liviana de lengueta + Espuma y Cuello con espuma acolchada para máximo
+                confort y soporte + Perforaciones de ventilación para una <br> mejor respirabilidad del pie + Diseño
+                Pill
+                Pattern de DC en pisada + Nueva suela Cupsole con costura</p>
+            <a class="boton" href="#">Comprar</a>
+        </div>
+        <div class="box">
+            <img src="assets/DC Pure Men's Skate Shoes White_Battleship_White 10 D - Medium.jpeg" alt="">
+            <h3 class="tit">DC Shoes Pure White <br> $65000</h3>
+            <p>Capellada textil y cuero Sintetico + Forrería de Mesh + Cuello y lengüeta acolchados con espuma para
+                mayor amortiguación y protección + Construcción vulcanizada <br> + Suela resistente a la abrasión, 
+                realizada con 30 % de caucho reciclado para mejor rendimiento del calzado</p>
+
+            <a class="boton" href="#">Comprar</a>
+        </div>
+        
+    </main>
+    <footer>
+        <div>
+
+            <h3 class="tit">SEGUINOS</h3>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <a target="_blank" href="https://www.instagram.com/dcshoes_argentina/">
+                <img class="icons" src="/assets/ic-instagram.png" alt="">
+            </a>
+            <a target="_blank" href="https://www.tiktok.com/@dcshoes">
+                <img class="icons" src="/assets/ic-tiktok.png" alt="">
+            </a>
+            <a target="_blank" href="https://www.youtube.com/@DCShoes">
+                <img class="icons" src="/assets/ic-youtube.png" alt="">
+            </a>
+
+        </div>
+    </footer>
+</body>
+
+</html>
